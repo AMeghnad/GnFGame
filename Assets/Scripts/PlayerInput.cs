@@ -7,12 +7,6 @@ public class PlayerInput : MonoBehaviour
     float inputH, inputV;
     CharacterController controller;
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +15,5 @@ public class PlayerInput : MonoBehaviour
 
         Vector3 direction = new Vector3(inputH, 0, inputV);
         controller.Move(direction);
-
     }
 }
