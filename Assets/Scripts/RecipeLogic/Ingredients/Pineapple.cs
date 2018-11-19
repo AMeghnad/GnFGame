@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pineapple : Ingredient
+namespace LavaleyGame
 {
+    public class Pineapple : Ingredient
+    {
 
+    }
 }

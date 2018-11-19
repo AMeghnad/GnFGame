@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Yam : Ingredient
+namespace LavaleyGame
 {
+    public class Yam : Ingredient
+    {
 
+    }
 }

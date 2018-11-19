@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9e08e80f56f3848a764d041c0cbb07, type: 3}
   m_Name: Savoury Kebab
   m_EditorClassIdentifier: 
+  prep: 1
   ingredients:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 114334606247637804, guid: d47bec030127caf428fdb751f0741164, type: 2}
+  - {fileID: 114916585174508832, guid: 05e15c734af99ea46a8ab91c1f56f5f7, type: 2}

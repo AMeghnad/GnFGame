@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fish : Ingredient
+namespace LavaleyGame
 {
+    public class Fish : Ingredient
+    {
 
+    } 
 }

@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// base class for all ingredients
-public class Ingredient : MonoBehaviour
+namespace LavaleyGame
 {
-
-    // Use this for initialization
-    void Start()
+    // base class for all ingredients
+    public class Ingredient : MonoBehaviour
     {
+        public bool isChopped;
 
-    }
+        // Use this for initialization
+        protected virtual void Start()
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
+        }
 
+        // Update is called once per frame
+        protected virtual void Update()
+        {
+
+        }
     }
 }
