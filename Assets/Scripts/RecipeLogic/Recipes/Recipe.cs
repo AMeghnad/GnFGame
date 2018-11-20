@@ -4,16 +4,9 @@ using UnityEngine;
 
 namespace LavaleyGame
 {
-    public enum Preparation
-    {
-        Dried,
-        Roasted
-    }
-
     [CreateAssetMenu(fileName = "Recipe", menuName = "Recipe")]
     public class Recipe : ScriptableObject
     {
-        public Preparation prep;
         public Ingredient[] ingredients;
 
         //void IngredientMixer(Ingredient ingredient1, Ingredient ingredient2)

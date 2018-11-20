@@ -43,5 +43,14 @@ namespace LavaleyGame
             // Apply velocity to rigidbody
             rigid.velocity = vel;
         }
+
+        public void OnTriggerEnter(Collider other)
+        {
+            // if it's a chopping board
+                // chop ingredients!
+            // if it's a cooking station
+                // cook according to the recipe list
+
+        }
     }
 }

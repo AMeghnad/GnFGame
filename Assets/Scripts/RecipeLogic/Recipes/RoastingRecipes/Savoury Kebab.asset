@@ -9,9 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e9e08e80f56f3848a764d041c0cbb07, type: 3}
-  m_Name: Sweet n Salty Jerky
+  m_Name: Savoury Kebab
   m_EditorClassIdentifier: 
-  prep: 0
   ingredients:
-  - {fileID: 114012933559503938, guid: ad5298ebb79f8da48acbe924b0c6ff30, type: 2}
+  - {fileID: 0}
   - {fileID: 114916585174508832, guid: 05e15c734af99ea46a8ab91c1f56f5f7, type: 2}
