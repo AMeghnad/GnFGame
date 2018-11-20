@@ -11,21 +11,14 @@ namespace LavaleyGame
         public float speed = 5f;
         public float maxVelocity = 10f;
         public Rigidbody rigid;
+        public IngredientManager ingredientManager;
+        public UserInput input;
+
 
         // Update is called once per frame
         void Update()
         {
-            //inputH = Input.GetAxis("Horizontal");
-            //inputV = Input.GetAxis("Vertical");
-            //Vector3 initPos = transform.position;
-            ////transform.forward = mainCam.transform.forward;
-            ////transform.localEulerAngles = new Vector3(mainCam.transform.localEulerAngles.x, mainCam.transform.localEulerAngles.y, mainCam.transform.localEulerAngles.z);
 
-            //direction = new Vector3(inputH, gravity, inputV) * Time.deltaTime * speed;
-            ////direction += mainCam.transform.forward * distance * Time.deltaTime;
-            //controller.Move(direction);
-            ////if (initPos == transform.position)
-            ////    Debug.Log("No Movement");
         }
 
         public void Move(float inputH, float inputV)
@@ -44,13 +37,24 @@ namespace LavaleyGame
             rigid.velocity = vel;
         }
 
-        public void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider other)
         {
-            // if it's a chopping board
-                // chop ingredients!
-            // if it's a cooking station
-                // cook according to the recipe list
 
+           
+            // cook according to the recipe list
+            // if it's a chopping board and you press the right button
+            if (other.GetComponent<Station>().name == "PrepStation" && Input.GetKeyDown("Interact"))
+            {
+                // chop ingredients!
+                ingredientManager.ingredient.isChopped = true;
+                input.canMove = false;
+            }
+
+            // if it's a cooking station
+            if (other.GetComponent<Station>().name == "CookingStation" && Input.GetKeyDown("Interact"))
+            {
+
+            }
         }
     }
 }

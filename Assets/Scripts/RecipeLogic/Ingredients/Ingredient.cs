@@ -9,6 +9,7 @@ namespace LavaleyGame
     // base class for all ingredients
     public class Ingredient : ScriptableObject
     {
+        public bool isChopped;
         //public bool isChopped;
         //public PlayerController controller;
 
