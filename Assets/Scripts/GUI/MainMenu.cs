@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public bool showOptions;
 
     // Use this for initialization
     void Start()
     {
-
+        showOptions = false;
     }
 
     // Update is called once per frame
@@ -19,17 +20,17 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    void Play()
+    public void Play()
     {
         SceneManager.LoadScene(1);
     }
 
-    void Options()
+    public void Options()
     {
-
+        showOptions = !showOptions;
     }
 
-    void Exit()
+    public void Exit()
     {
         Application.Quit();
     }
