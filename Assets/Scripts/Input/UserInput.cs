@@ -9,6 +9,10 @@ namespace LavaleyGame
         public PlayerController controller;
         public bool canMove;
 
+        private void Awake()
+        {
+            canMove = true;
+        }
         // Update is called once per frame
         void Update()
         {
