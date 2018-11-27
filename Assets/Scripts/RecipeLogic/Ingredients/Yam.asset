@@ -11,3 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724e158ffa053db4583fb71c52598274, type: 3}
   m_Name: Yam
   m_EditorClassIdentifier: 
+  isChopped: 0
+  ingredient: 1

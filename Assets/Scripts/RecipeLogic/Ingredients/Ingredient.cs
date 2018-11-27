@@ -10,6 +10,8 @@ namespace LavaleyGame
     public class Ingredient : ScriptableObject
     {
         public bool isChopped;
+        public IngredientType ingredient;
+
         //public bool isChopped;
         //public PlayerController controller;
 
@@ -32,5 +34,11 @@ namespace LavaleyGame
         //        isChopped = true;
         //    }
         //}
+    }
+    public enum IngredientType
+    {
+        Pineapple,
+        Yam,
+        Fish
     }
 }

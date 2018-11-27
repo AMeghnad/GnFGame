@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33296834005615060}
   - component: {fileID: 23799330641890588}
   - component: {fileID: 136091366707879912}
-  - component: {fileID: 114910616974344432}
   - component: {fileID: 54419515731455758}
-  - component: {fileID: 114726539864447776}
+  - component: {fileID: 114419417996100748}
+  - component: {fileID: 114731077462216696}
+  - component: {fileID: 114341455998471964}
   m_Layer: 0
   m_Name: NetworkPlayer
   m_TagString: Player
@@ -102,7 +103,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &114726539864447776
+--- !u!114 &114341455998471964
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,24 +111,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 1978786446605126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65602f8091f68e946b413121ab6b1afa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 114910616974344432}
---- !u!114 &114910616974344432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1978786446605126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01c9d32a1ec160b419e7972aa401920d, type: 3}
+  m_Script: {fileID: 11500000, guid: f6ce808f7055c904a96bc0c0239d0121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
   maxVelocity: 10
-  rigid: {fileID: 54419515731455758}
+  rigid: {fileID: 0}
+  ingredientManager: {fileID: 0}
+  canMove: 0
+--- !u!114 &114419417996100748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1978786446605126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 215
+    i1: 86
+    i2: 86
+    i3: 169
+    i4: 82
+    i5: 251
+    i6: 112
+    i7: 100
+    i8: 249
+    i9: 166
+    i10: 109
+    i11: 143
+    i12: 50
+    i13: 197
+    i14: 65
+    i15: 30
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114731077462216696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1978786446605126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79feb290c8e627c429149e5cd0c3ba14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 114341455998471964}
 --- !u!136 &136091366707879912
 CapsuleCollider:
   m_ObjectHideFlags: 1
