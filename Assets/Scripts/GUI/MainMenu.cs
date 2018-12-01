@@ -4,34 +4,37 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+namespace LavaleyGame
 {
-    public bool showOptions;
-
-    // Use this for initialization
-    void Start()
+    public class MainMenu : MonoBehaviour
     {
-        showOptions = false;
-    }
+        public bool showOptions;
 
-    // Update is called once per frame
-    void Update()
-    {
+        // Use this for initialization
+        void Start()
+        {
+            showOptions = false;
+        }
 
-    }
+        // Update is called once per frame
+        void Update()
+        {
 
-    public void Play()
-    {
-        SceneManager.LoadScene(1);
-    }
+        }
 
-    public void Options()
-    {
-        showOptions = !showOptions;
-    }
+        public void Play()
+        {
+            SceneManager.LoadScene(1);
+        }
 
-    public void Exit()
-    {
-        Application.Quit();
+        public void Options()
+        {
+            showOptions = !showOptions;
+        }
+
+        public void Exit()
+        {
+            Application.Quit();
+        }
     }
 }
